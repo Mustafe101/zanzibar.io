@@ -1,0 +1,1353 @@
+body{
+
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::N A V B A R:::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+.menu{
+    position: relative;
+    display: flex;  
+    background: black;
+    
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+
+ @media screen and (max-width:1024px) {
+    .menu{
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        font-size: 25px;
+        width: 100vw;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+
+
+h1 {
+    display: flex;
+    color: white;
+    list-style: none;
+    font-family: 'Warnes', cursive;
+}
+
+
+@media screen and (max-width:768px) {
+    h1{
+        margin-left: 60px;
+        font-size: 30px;
+    }
+    @media screen and (max-width:450px){
+        h1{
+        font-size: 20px;
+    }
+}
+}
+
+.option{
+    text-decoration: none;
+    display: flex;
+    min-width: 300px;
+}
+
+
+.option ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+    flex-wrap: nowrap;
+}
+
+
+@media screen and (max-width: 768px) {
+    .option ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        height: fit-content;
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .option ul{
+        margin-right: px;
+    }
+}
+
+
+.option li{
+    color: white;
+    float: left;
+    width: 150px;
+    
+}
+@media screen and (max-width: 1024px) {
+    .option li{
+        height: 45px;
+    }
+}
+
+.option a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.px;
+}
+
+
+.option li a:hover{
+    color: white;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+/*.................T O P  I M A G E.................*/
+   
+
+header{
+    height: 100vh;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:1024px) {
+    header{
+        height: 1000px;
+    }
+}
+
+
+.top {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 18.3em;
+    width: 500px;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+    .top{
+        width: 98vw;
+        left: 10px;
+        flex-direction: column;
+        height: fit-content;
+        align-items: flex-start;
+        margin-top: 190px;
+    }
+}
+
+
+h2{
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    width: 50vw;
+}
+
+
+@media screen and (max-width:800px) {
+    .contactez-nous p{
+        align-self: center;
+        font-size: 20px;
+    }
+    .btn{
+        width: 60vw;
+    }
+}
+h3{
+    color: white;
+    width: 60vw;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    margin: 0%;
+}
+
+
+.btn p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+}
+
+@media screen and (max-width:800px) {
+    .btn button{
+        margin: 5px; 
+        flex-direction: column;  
+    }
+ }
+
+
+button{
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 3px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+    height: 100px;
+}
+
+
+@media screen and (max-width:800px) {
+    button{
+        margin: 5px;   
+    }
+ }
+
+
+#N{
+    color: rgb(89, 207, 253);
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition-duration: 1.3s, 1.3s;
+}
+
+
+#N:hover{
+    background: aqua;
+    transition-duration: 1.3s;
+    color: white;
+}
+
+
+#C{
+    
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: transparent;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-left:8px;
+    margin-bottom: 420px;
+    transition-duration: 1.3s, 1.3s;
+}
+
+
+#C:hover{
+    background: aqua;
+}
+
+
+/*.........................M O N K E Y......................*/
+
+
+h4{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+}
+
+
+h4:after {
+    display: block;
+    height: 2px;
+    background-color: aqua;
+    width: 100px;
+    content: " ";
+    margin-top: 10px;
+}
+
+
+.monkey{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.king img{
+    width: 80%;
+    align-content: center;
+}
+
+.fonts{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: fit-content;
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .fonts{
+        top: 30%;
+        width: 90%;
+        height: 60%;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 70px;
+    }   
+}
+
+@media screen and (max-width:1100px) {
+    .king{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        opacity: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }   
+}
+
+
+.fonts h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin:20px;
+}
+
+
+.fonts p{
+    font-size: 18px;
+    font-family: 'roboto' , sans-serif;
+    margin: 2px;
+}
+
+
+.fonts svg{
+    position: relative;
+    align-self: flex-start;
+    height: 30px;
+    margin-left:-70px ;
+    margin-right: 50px;
+    margin-bottom: 0;
+    transition-duration: 0.5s, 0.5s;
+}
+
+
+.fonts svg:hover{
+    display: block;
+    height: 40px;
+}
+
+
+/*..................T H R E E  C A R D S..................*/
+
+
+.ile {
+    color: rgb(25, 65, 65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    background: aqua;
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+    height: 150px;
+    min-width: none;
+}
+
+
+.ile:after {
+    display: block;
+    opacity: 60%;
+    height: 2px;
+    background-color: rgb(18, 151, 151);
+    width: 100px;
+    content: " ";
+    margin-top: 5px;
+    margin-bottom:0px ;
+}
+
+
+.container-ile{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: none;
+    max-height: none;
+    background: aqua;
+}
+
+
+/*//////////////////////////////////*/
+
+
+.image1{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 450px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.image1 img{
+    align-self: center;
+}
+
+
+.image1 b{
+    font-family: 'Raleway', sans-serif;
+    align-self: center;
+}
+
+
+.image1 p{  
+    font-family: 'roboto' , sans-serif;
+    align-self: center;
+    width: 300px;
+}
+
+
+/*//////////////////////////////////*/
+
+
+.image2{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 10px;
+    width: 450px;
+    height: 500px;
+    border-radius: 5%;
+}
+
+
+.image2 img{
+    align-self: center;
+}
+
+
+.image2 b{
+    font-family: 'Raleway', sans-serif;
+    align-self: center;
+}
+
+
+.image2 p{
+    font-family: 'roboto' , sans-serif;
+    align-self: center;
+    width: 300px;
+}
+
+
+/*////////////////////////////////////*/
+
+
+.image3{
+    
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 10px;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+.image3 img{
+    align-self: center;
+    border-radius: 30px;
+}
+
+
+.image3 b{
+    font-family: 'Raleway', sans-serif;
+    align-self: center;
+}
+
+
+.image3 p{
+    font-family: 'roboto' , sans-serif;
+    align-self: center;
+    width: 300px;
+}
+
+
+/*..................................G A L E R I E...............................*/
+
+
+.container-gal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    height: fit-content;
+    height: 90%;
+    width: 90%;
+    
+}
+
+
+.container-gal b{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-self: center;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container-gal b::after{
+    display: block;
+    align-self: center;
+    height: 4px;
+    background-color: aqua;
+    width: 150px;
+    content: " ";
+    margin-top: 10px;
+}
+
+/*////////////////////////////////////*/
+
+.galerie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 80%;
+    min-width: none;
+}
+
+.GALERIE img{
+    display: flex;
+    width: 100%;
+}
+        
+.first{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    width: 100% ;
+}
+
+
+@media screen and (max-width:800px) {
+   .first{
+       flex-direction: column;
+   }
+}
+
+
+.first #AA{
+    height: 350px;
+    width: 30%;
+    margin: 5px;
+    border-radius: 5%;
+    margin-right: 15px;
+}
+@media screen and (max-width:800px) {
+    .first #AA{
+        width: 90%;
+        margin: 10px;
+    }
+ }
+
+.first #BB{
+    height: 350px;
+    width: 70%;
+    margin: 5px;
+    border-radius: 5%;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .first #BB{
+        width: 90%;
+        margin: 10px;
+    }
+ }
+
+.second{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    width: 100%;
+}
+
+
+@media screen and (max-width:800px) {
+    .second{
+        flex-direction: column;
+    }
+ }
+ 
+
+.second #CC{
+    height: 350px;
+    flex: 1.5;
+    width: 35%;
+    margin: 5px;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .second #CC{
+        width: 90%;
+        margin: 10px;
+    }
+ }
+
+.second #DD{
+    height: 350px;
+    flex: 1.5;
+    width: 30%;
+    margin: 5px;
+    border-radius: 5%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .second #DD{
+        width: 90%;
+        margin: 10px;
+    }
+ }
+
+.second #EE{
+    height: 350px;
+    flex: 1.5;
+    width: 32%;
+    margin: 5px;
+    border-radius: 5%;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .second #EE{
+        width: 90%;
+        margin: 10px;
+    }
+ }
+
+/*.........................C O N T A C T S...........................*/
+
+.container-con{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .container-con {
+        margin-bottom: 15%;
+    }     
+ }
+
+
+.container-con{
+    background-image: url(img/the-paysage.jpg);
+/*  background-image:linear-gradient( rgba(0, 242, 96, .4),
+    rgba(7, 117, 230, .1));*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100%;
+    margin-top: 80px;
+    background-attachment: fixed;
+    filter: brightness(80%);
+    max-height: auto;  
+}
+
+@media screen and (max-width: 768px){
+    .container-con{
+        height: 190vw;
+    }
+}
+
+
+
+.container-con #title{
+    position: relative;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-self: center;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-con #title::after{
+    display: block;
+    align-self: center;
+    height: 2px;
+    background-color:#ffff;
+    width: 150px;
+    content: " ";
+    margin-top: 10px;
+    margin-bottom: 30%;
+}
+
+@media screen and (max-width:768px){
+    .container-con #title{
+        font-size: 30px;
+        margin-bottom: 122px;
+    }
+}
+
+.people svg{
+    position: absolute;
+    margin-left: -35px;
+    margin-top: -5%;
+    height: 30px;
+    width: 40px;
+    opacity: 50%;    
+}
+
+.people{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+
+@media screen and (max-width:1024px) {
+    .people{
+        font-size: 15px;
+        flex-direction: column;
+        height: 80vw;
+        width: auto;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        align-content: space-around;
+     }
+}
+
+
+.emilie{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 311px;
+    margin-bottom: 10vw;
+}
+
+@media screen and(max-width:450px) {
+    .emilie{
+        width: 70vw;
+         
+    }
+    
+}
+
+.emilie p{
+    width: 20vw;
+    color: white;
+    font-family: 'roboto' , sans-serif;
+}
+
+
+
+.emilie img{
+    border-radius: 50%;
+    width: 13%;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .emilie p {
+        width: 40vw;
+    }
+ }
+ 
+
+
+.emilie h6{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'roboto' , sans-serif;
+}
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::I N F O R M A T I O N:::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+.register{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    background: white;
+    height: 1000px;
+    width: 100%;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:1024px) {
+    .register{
+        height: fit-content;
+    }
+ }
+ 
+
+.register #title2{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-self: center;
+    font-size: 60px;
+    opacity: 80%;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+}
+
+.register #title2::after{
+    display: block;
+    align-self: center;
+    height: 2px;
+    background-color: aqua;
+    width: 150px;
+    content: " ";
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:550px){
+    .register #title2{
+        font-size: 30px;
+  
+    }
+}
+
+.presition{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 70px;
+    
+}
+
+@media screen and (max-width:1024px) {
+    .presition{
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+.idylle{
+    border-radius: 5%;
+    border: solid 1px grey;
+    background: white;
+    height: fit-content;
+    width: 25%;
+    margin: 0%;
+    box-shadow: 1px 2px 2px 1px grey ;
+}
+
+
+@media screen and (max-width:1024px) {
+    .idylle{
+        align-self: center;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}
+ 
+.idylle h6 {
+    font-size: 30px;
+    opacity: 80%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'roboto' , sans-serif; 
+    letter-spacing: 0ch;
+}
+
+.idylle p {
+    font-size: 40px;
+    opacity: 80%;
+    margin: 0%;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0ch;
+}
+
+@media screen and (max-width:1500px){
+    .idylle p {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .tanzanie p {
+        width: 50%;
+        width: 50vw;
+    }
+}
+
+.idylle i{
+    font-size: 20px;
+    opacity: 80%;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-family: 'roboto' , sans-serif; 
+    letter-spacing: 0ch;
+}
+
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .icon{
+        width: 200px;
+    }
+}
+
+
+.icon p{
+    flex-wrap: wrap;
+    opacity: 80%;
+}
+
+.icon #detail{
+    flex-direction: row;
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'roboto' , sans-serif; 
+
+}
+
+.icon svg{
+    width: 20px;
+}
+
+.insc{
+    align-self: center;
+    background: rgb(90, 187, 219);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom   : 20px;
+    width: 200px;
+    height: 50px;
+    color: white;   
+    font-size: 20px;
+    transition-duration: 1s, 1s;
+}
+
+.insc:hover{
+    
+    background: rgb(112, 201, 231);
+    transition: 1s;
+}
+
+@media screen and (max-width:1250px) {
+    .insc{
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .insc{
+        align-self: center;
+    }
+}
+
+.tanzanie{
+    border-radius: 5%;
+    border: solid 1px grey;
+    background: aqua;
+    height: fit-content;
+    width: 25%;
+    margin: 0%;
+    box-shadow: 1px 2px 2px 1px grey ;
+}
+
+@media screen and (max-width:1024px) {
+    .tanzanie{
+        align-self: center;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+ }
+ 
+ 
+
+.tanzanie h6 {
+    font-size: 30px;
+    opacity: 80%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'roboto' , sans-serif; 
+    letter-spacing: 0ch;
+}
+
+.tanzanie p {
+    font-size: 40px;
+    opacity: 80%;
+    margin: 0%;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0ch;
+}
+
+@media screen and (max-width:1500px){
+    .tanzanie p {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .tanzanie p {
+        width: 50%;
+        width: 50vw;
+    }
+    
+}
+
+.tanzanie i{
+    font-size: 20px;
+    opacity: 80%;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-family: 'roboto' , sans-serif; 
+    letter-spacing: 0ch;
+}
+
+.bout{
+    border-radius: 5%;
+    border: solid 1px grey;
+    background: white;
+    height: fit-content;
+    width: 25%;
+    margin: 0;
+    box-shadow: 1px 2px 2px 1px grey ;
+}
+
+@media screen and (max-width:1024px) {
+    .bout{
+        align-self: center;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+     
+ }
+ 
+
+.bout h6 {
+    font-size: 30px;
+    opacity: 80%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'roboto' , sans-serif; 
+    letter-spacing: 0ch;
+}
+
+.bout p {
+    font-size: 40px;
+    opacity: 80%;
+    margin: 0%;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0ch;
+}
+
+@media screen and (max-width:1500px){
+    .bout p {
+        width: 50%;
+    }
+}
+@media screen and (max-width:1024px){
+    .bout p{
+        width:50vw;
+    }
+}
+
+.bout i{
+    font-size: 20px;
+    opacity: 80%;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-family: 'roboto' , sans-serif; 
+    letter-spacing: 0ch;
+}
+
+
+.test{
+    background: rgb(228, 228, 0);
+    height: 900px;
+    width: 100%;
+}
+
+/*.....................C O N T A C T S......................*/
+
+.contactez-nous{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1300px) {
+    .contactez-nous{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center ;
+    }
+ }
+
+.right{
+    display: flex;
+    flex-direction: column;
+    
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 0;
+    height: fit-content;
+}
+
+@media screen and (max-width:1200px) {
+    .right{
+        align-self: center;
+        width: 70%;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+}
+
+.contactez-nous h6{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.contactez-nous h6::after{
+    display: block;
+    height: 2px;
+    background-color: aqua;
+    width: 100px;
+    content: " ";
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px){
+    .contactez-nous h6{
+        font-size: 30px;
+        
+    }
+}
+
+.contactez-nous p{
+    display: flex;
+    font-size: 15px;
+    font-family: 'roboto' , sans-serif; 
+}
+
+    
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: -165px;
+}
+
+@media screen and (max-width:1200px) {
+    .location{
+        flex-direction: column;
+        align-self: center;
+        margin:0;
+    }
+ }
+
+
+.location svg{
+    width: 15px;
+}
+@media screen and (max-width:800px){
+    .location svg{
+        margin: 0;
+}
+}
+.bars{
+    display: flex;
+    flex-direction: row;
+    width: 200hv;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .bars{
+        flex-direction: column;
+        margin: 0;
+    } 
+ }
+
+.bars #nom{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bars input{
+    height: 30px;
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.massage{
+    display: flex;
+    flex-direction: column;
+}
+
+.massage input{
+    height: 80px;
+    border-radius: 5px;
+}
+
+.massage button{
+    color: white;
+    font-size: 20px;
+    width: 25%;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: rgb(89, 207, 253);  
+    transition-duration: 1s;
+}
+
+.massage button:hover{
+    background: rgb(58, 182, 223);
+    transition: 1s;
+}
+
+@media screen and (max-width:768px){
+    .massage button{
+        width: 30vw;
+        font-size: medium   ;
+    }
+}
+
+.left{
+    height: fit-content;
+    width: 40%;
+}
+
+@media screen and (max-width:1200px) {
+    .left{
+        width: 100%;
+        margin: 0;
+        align-self: flex-start;
+    }
+     
+ }
+
+.map iframe{
+    display: flex;
+    width: 100%;
+   
+    margin-right: 3%;
+    margin-top: 0;
+}
+
+/*.................F O O T E R....................*/
+
+footer{
+    display: flex;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center ;
+}
